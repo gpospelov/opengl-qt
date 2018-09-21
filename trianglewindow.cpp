@@ -23,7 +23,7 @@ void TriangleWindow::initialize()
 
 void TriangleWindow::render()
 {
-    const qreal retinaScale = devicePixelRatio();
+    const qreal retinaScale=devicePixelRatio();
     glViewport(0, 0, width() * retinaScale, height() * retinaScale);
 
     glClear(GL_COLOR_BUFFER_BIT);
